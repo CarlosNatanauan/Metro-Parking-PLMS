@@ -1,0 +1,487 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A760FFD2-99B4-450C-B99B-771DB894D824}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CapstonePrototype</RootNamespace>
+    <AssemblyName>CapstonePrototype</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DatabaseCodes.cs" />
+    <Compile Include="EnterCash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnterCash.Designer.cs">
+      <DependentUpon>EnterCash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMadminMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMadminMain.Designer.cs">
+      <DependentUpon>FRMadminMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMAdminReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMAdminReports.Designer.cs">
+      <DependentUpon>FRMAdminReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMlog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMlog.Designer.cs">
+      <DependentUpon>FRMlog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMlogin.Designer.cs">
+      <DependentUpon>FRMlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMlotMap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMlotMap.Designer.cs">
+      <DependentUpon>FRMlotMap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMmain.Designer.cs">
+      <DependentUpon>FRMmain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMparkingRates.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMparkingRates.Designer.cs">
+      <DependentUpon>FRMparkingRates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputForm.Designer.cs">
+      <DependentUpon>InputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FRMvehicleInOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMvehicleInOut.Designer.cs">
+      <DependentUpon>FRMvehicleInOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prototypeDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prototypeDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="prototypeDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prototypeDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="prototypeDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prototypeDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="prototypeDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prototypeDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="prototypeDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prototypeDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="prototypeDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prototypeDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="prototypeDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prototypeDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="prototypeDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prototypeDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="prototypeDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prototypeDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="prototypeDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prototypeDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="prototypeDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prototypeDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="prototypeDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prototypeDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="prototypeDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prototypeDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="prototypeDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>prototypeDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receipt.Designer.cs">
+      <DependentUpon>Receipt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UC_Casual.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UC_Casual.Designer.cs">
+      <DependentUpon>UC_Casual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UC_CasualLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UC_CasualLog.Designer.cs">
+      <DependentUpon>UC_CasualLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UC_Flatrate_Log.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UC_Flatrate_Log.Designer.cs">
+      <DependentUpon>UC_Flatrate_Log.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UC_Flatrate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UC_Flatrate.Designer.cs">
+      <DependentUpon>UC_Flatrate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UC_InfoAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UC_InfoAdmin.Designer.cs">
+      <DependentUpon>UC_InfoAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\UC_InfoEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\UC_InfoEmployee.Designer.cs">
+      <DependentUpon>UC_InfoEmployee.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EnterCash.resx">
+      <DependentUpon>EnterCash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMadminMain.resx">
+      <DependentUpon>FRMadminMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMAdminReports.resx">
+      <DependentUpon>FRMAdminReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMlog.resx">
+      <DependentUpon>FRMlog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMlogin.resx">
+      <DependentUpon>FRMlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMlotMap.resx">
+      <DependentUpon>FRMlotMap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMmain.resx">
+      <DependentUpon>FRMmain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMparkingRates.resx">
+      <DependentUpon>FRMparkingRates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMvehicleInOut.resx">
+      <DependentUpon>FRMvehicleInOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputForm.resx">
+      <DependentUpon>InputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipt.resx">
+      <DependentUpon>Receipt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UC_Casual.resx">
+      <DependentUpon>UC_Casual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UC_CasualLog.resx">
+      <DependentUpon>UC_CasualLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UC_Flatrate_Log.resx">
+      <DependentUpon>UC_Flatrate_Log.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UC_Flatrate.resx">
+      <DependentUpon>UC_Flatrate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UC_InfoAdmin.resx">
+      <DependentUpon>UC_InfoAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\UC_InfoEmployee.resx">
+      <DependentUpon>UC_InfoEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="prototypeDataSet.xsc">
+      <DependentUpon>prototypeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prototypeDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prototypeDataSet.xss">
+      <DependentUpon>prototypeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet1.xsc">
+      <DependentUpon>prototypeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prototypeDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prototypeDataSet1.xss">
+      <DependentUpon>prototypeDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet10.xsc">
+      <DependentUpon>prototypeDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prototypeDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prototypeDataSet10.xss">
+      <DependentUpon>prototypeDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet11.xsc">
+      <DependentUpon>prototypeDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prototypeDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prototypeDataSet11.xss">
+      <DependentUpon>prototypeDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet12.xsc">
+      <DependentUpon>prototypeDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prototypeDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prototypeDataSet12.xss">
+      <DependentUpon>prototypeDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet13.xsc">
+      <DependentUpon>prototypeDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prototypeDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prototypeDataSet13.xss">
+      <DependentUpon>prototypeDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet2.xsc">
+      <DependentUpon>prototypeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prototypeDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prototypeDataSet2.xss">
+      <DependentUpon>prototypeDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet3.xsc">
+      <DependentUpon>prototypeDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prototypeDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prototypeDataSet3.xss">
+      <DependentUpon>prototypeDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet4.xsc">
+      <DependentUpon>prototypeDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prototypeDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prototypeDataSet4.xss">
+      <DependentUpon>prototypeDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet5.xsc">
+      <DependentUpon>prototypeDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prototypeDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prototypeDataSet5.xss">
+      <DependentUpon>prototypeDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet6.xsc">
+      <DependentUpon>prototypeDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prototypeDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prototypeDataSet6.xss">
+      <DependentUpon>prototypeDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet7.xsc">
+      <DependentUpon>prototypeDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prototypeDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prototypeDataSet7.xss">
+      <DependentUpon>prototypeDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet8.xsc">
+      <DependentUpon>prototypeDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prototypeDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prototypeDataSet8.xss">
+      <DependentUpon>prototypeDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet9.xsc">
+      <DependentUpon>prototypeDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="prototypeDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>prototypeDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="prototypeDataSet9.xss">
+      <DependentUpon>prototypeDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\metroparking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimze.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close3d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pictures\close3d.png" />
+    <Content Include="pictures\metroparking.png" />
+    <Content Include="pictures\minimze.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
