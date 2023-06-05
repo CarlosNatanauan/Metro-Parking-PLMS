@@ -10,4 +10,4 @@ Vehicle IN/OUT: This is where the Employees can register/out vehicles
 Vehicles Log: This is the section where the Employee can see Log of vehicles that successfully out of the parking lot
 ![ParkingLot(log)](https://github.com/CarlosNatanauan/Metro-Parking-PLMS/assets/94023674/5c55d862-90f9-411d-8bb7-c5702736b69a)
 
-Note: This project is still a work-in-progress
+Note: This project is still ongoing.
