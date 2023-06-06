@@ -1,5 +1,5 @@
 # Metro-Parking-PLMS
-Parking Lot Management System
+Parking Lot Management System | Capstone Project (Prototype)
 
 Login Page: This is the Login page for Employee and Admin
 Admin:
