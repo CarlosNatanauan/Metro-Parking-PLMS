@@ -1,4 +1,4 @@
-# Metro-Parking-PLMS: Efficient Parking Lot Management 🚗
+# Metro-Parking: Efficient Parking Lot Management 🚗
 
 Welcome to the repository of our Capstone Project prototype - an efficient and user-friendly Parking Lot Management System designed to simplify parking processes.
 
